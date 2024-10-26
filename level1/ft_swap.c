@@ -1,18 +1,13 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tbruha <tbruha@student.42Prague.com>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 13:22:50 by tbruha            #+#    #+#             */
-/*   Updated: 2024/09/26 13:22:51 by tbruha           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include <stdio.h>
 
-// #include <stdio.h>
+void	ft_swap(int *a, int *b)
+{
+	int	temp;
 
-// void	ft_swap(int *a, int *b);
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
 
 // int	main(void)
 // {
@@ -26,11 +21,14 @@
 // 	return (0);
 // }
 
-void	ft_swap(int *a, int *b)
-{
-	int	temp;
+// Assignment name  : ft_swap
+// Expected files   : ft_swap.c
+// Allowed functions:
+// --------------------------------------------------------------------------------
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
-}
+// Write a function that swaps the contents of two integers the adresses of which
+// are passed as parameters.
+
+// Your function must be declared as follows:
+
+// void	ft_swap(int *a, int *b);

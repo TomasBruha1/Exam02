@@ -21,8 +21,6 @@ int	main(int argc, char **argv)
 	return (0);
 }
 
-
-
 // Assignment name  : rot_13
 // Expected files   : rot_13.c
 // Allowed functions: write

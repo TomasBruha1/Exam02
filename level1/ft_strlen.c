@@ -1,18 +1,14 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tbruha <tbruha@student.42Prague.com>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 13:13:35 by tbruha            #+#    #+#             */
-/*   Updated: 2024/09/26 13:13:37 by tbruha           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <stdio.h>
 
-// int	ft_strlen(char *str);
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
 
 // int	main(int argc, char **argv)
 // {
@@ -24,12 +20,13 @@
 // 	return (0);
 // }
 
-int	ft_strlen(char *str)
-{
-	int	i;
+// Assignment name  : ft_strlen
+// Expected files   : ft_strlen.c
+// Allowed functions:
+// --------------------------------------------------------------------------------
 
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
+// Write a function that returns the length of a string.
+
+// Your function must be declared as follows:
+
+// int	ft_strlen(char *str);
