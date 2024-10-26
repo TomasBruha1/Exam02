@@ -1,6 +1,20 @@
 #include <unistd.h>
 
-void	ft_printchar(int nbr);
+void	ft_printchar(int nbr)
+{
+	char c;
+
+	c = nbr+48;	
+	if (nbr > 9)
+		{
+			ft_printchar(nbr / 10);
+			ft_printchar(nbr % 10);
+		}
+	else
+		// write expects a pointer to char so it need to be converted prior
+		// and not in the function itsel.
+		write(1, &c, 1);
+}
 
 int	main(void)
 {
@@ -21,22 +35,6 @@ int	main(void)
 		write(1, "\n", 1);
 	}
 	return (0);
-}
-
-void	ft_printchar(int nbr)
-{
-	char c;
-
-	c = nbr+48;	
-	if (nbr > 9)
-		{
-			ft_printchar(nbr / 10);
-			ft_printchar(nbr % 10);
-		}
-	else
-		// write expects a pointer to char so it need to be converted prior
-		// and not in the function itsel.
-		write(1, &c, 1);
 }
 
 // Assignment name  : fizzbuzz
