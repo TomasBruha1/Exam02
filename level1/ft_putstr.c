@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+// Print @ the location of the string and move on.
 void	ft_putstr(char *str)
 {
 	int	i;

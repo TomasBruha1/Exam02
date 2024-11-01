@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+// Count the len(i) of str and print back until you have i.
 char	*rev_print(char *str)
 {
 	char	c;

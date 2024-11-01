@@ -1,6 +1,8 @@
 #include <unistd.h>
 #include <stdio.h>
 
+// Write and use atoi for argv[1]. Next ft is_prime that takes a number and if
+// is prime it adds it to sum, then decreses by one. In the end implement putnbr.
 int	ft_atoi(char *s)
 {
 	int	result;

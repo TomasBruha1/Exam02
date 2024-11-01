@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+// Once you pass space just continue until you ran out of printable chars.
 int	main(int argc, char **argv)
 {
 	int	i;

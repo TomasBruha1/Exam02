@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Nice use of dereferencing and swap, swap, swap.
 void	ft_swap(int *a, int *b)
 {
 	int	temp;

@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+// Same as rot 13. Also "hard code" for A to Y and special case for Z.
 int	main(int argc, char **argv)
 {
 	int	i;

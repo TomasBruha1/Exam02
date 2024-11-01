@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+// If you encounter alph char, find it's index, then loop over index and move to next after.
 int	find_char_index(char c)
 {
 	int		index;

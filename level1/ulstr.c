@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+// If one add or substract 32 or use ^(XOR) and reverse bitwise.
 int	main(int argc, char **argv)
 {
 	int	i;

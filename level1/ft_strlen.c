@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Just do it!
 int	ft_strlen(char *str)
 {
 	int	i;

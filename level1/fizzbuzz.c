@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+// Use modulo to find out what to print and then putnbr.
 void	ft_printchar(int nbr)
 {
 	char c;

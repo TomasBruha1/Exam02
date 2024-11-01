@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+// Substract a(97) + 13 and %mod 26 and add 97 back.
 int	main(int argc, char **argv)
 {
 	if (argc == 2)

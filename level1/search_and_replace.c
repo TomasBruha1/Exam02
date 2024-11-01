@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+// if condition to find search and then replace. No s#it Sherlock.
 int	main(int argc, char **argv)
 {
 	int	i;

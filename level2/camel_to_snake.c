@@ -1,18 +1,7 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   camel_to_snake.c                                   :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tbruha <tbruha@student.42Prague.com>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 13:38:25 by tbruha            #+#    #+#             */
-/*   Updated: 2024/09/26 13:38:26 by tbruha           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <unistd.h>
 #include <stdio.h>
 
+// If matching char, change argv[1][i] as needed and print.
 // Output is correct, but I think it is wrong. Let's leave it for now.
 int	main(int argc, char **argv)
 {
@@ -35,3 +24,25 @@ int	main(int argc, char **argv)
 	printf("\n%s\n", argv[1]);
 	return (0);
 }
+
+// Assignment name  : camel_to_snake
+// Expected files   : camel_to_snake.c
+// Allowed functions: malloc, free, realloc, write
+// --------------------------------------------------------------------------------
+
+// Write a program that takes a single string in lowerCamelCase format
+// and converts it into a string in snake_case format.
+
+// A lowerCamelCase string is a string where each word begins with a capital letter
+// except for the first one.
+
+// A snake_case string is a string where each word is in lower case, separated by
+// an underscore "_".
+
+// Examples:
+// $>./camel_to_snake "hereIsACamelCaseWord"
+// here_is_a_camel_case_word
+// $>./camel_to_snake "helloWorld" | cat -e
+// hello_world$
+// $>./camel_to_snake | cat -e
+// $
