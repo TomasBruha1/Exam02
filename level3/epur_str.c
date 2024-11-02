@@ -6,13 +6,13 @@
 /*   By: tbruha <tbruha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 17:39:32 by tbruha            #+#    #+#             */
-/*   Updated: 2024/11/01 17:44:30 by tbruha           ###   ########.fr       */
+/*   Updated: 2024/11/02 10:10:35 by tbruha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-// Pass start like atoi, 
+// Pass start like atoi, then check if there is space after space and i++.
 int	main(int argc, char **argv)
 {
 	int	i;
@@ -20,7 +20,16 @@ int	main(int argc, char **argv)
 	i = 0;
 	if (argc == 2)
 	{
-		write(1, &argv[1][i], 1);
+		while ((argv[1][i] == 9 || argv[1][i] == 32) && argv[1][i])
+			i++;
+		while (argv[1][i])
+		{
+			while((argv[1][i] == 9 || argv[1][i] == 32) && 
+			(argv[1][i+1] == 9 || argv[1][i+1] == 32))
+				i++;
+			write(1, &argv[1][i], 1);
+			i++;
+		}
 	}
 	write(1, "\n", 1);
 	return (0);
