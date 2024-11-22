@@ -21,7 +21,6 @@ int	main(int argc, char **argv)
 			i++;
 		}
 	}
-	printf("\n%s\n", argv[1]);
 	return (0);
 }
 
