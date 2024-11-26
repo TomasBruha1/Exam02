@@ -3,10 +3,8 @@
 // Count the len(i) of str and print back until you have i.
 char	*rev_print(char *str)
 {
-	char	c;
 	int		i;
 		
-	c = *str + 48;
 	i = 0;
 	while (str[i])
 		i++;

@@ -1,10 +1,21 @@
 #include <unistd.h>
 
 // If you encounter alph char, find it's index, then loop over index and move to next after.
-int	find_char_index(char c)
+int	find_char_lower_index(char c)
 {
 	int		index;
 	char	str[] = "abcdefghijklmnopqrstuvwxyz";
+
+	index = 0;
+	while (c != str[index])
+		index++;
+	return (index + 1);
+}
+
+int	find_char_upper_index(char c)
+{
+	int		index;
+	char	str[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	index = 0;
 	while (c != str[index])
@@ -25,7 +36,10 @@ int	main(int argc, char **argv)
 			repetition = 0;
 			if ((argv[1][i] >= 97 && argv[1][i] <= 122) || (argv[1][i] >= 65 && argv[1][i] <= 90))
 			{
-				repetition = find_char_index(argv[1][i]);
+				if (argv[1][i] >= 97 && argv[1][i] <= 122)
+					repetition = find_char_lower_index(argv[1][i]);
+				else if (argv[1][i] >= 65 && argv[1][i] <= 90)
+					repetition = find_char_upper_index(argv[1][i]);
 				while (repetition > 0)
 				{
 					write(1, &argv[1][i], 1);
@@ -46,7 +60,7 @@ int	main(int argc, char **argv)
 // count = argv[1][i] - 96; aka 'a' + 1;
 // count = argv[1][i] - 64; aka 'A' + 1;
 // while (count--)
-//	  write(1, &argv[1][i], 1);
+// 	  write(1, &argv[1][i], 1);
 
 // Assignment name  : repeat_alpha
 // Expected files   : repeat_alpha.c

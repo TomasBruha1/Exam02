@@ -14,7 +14,7 @@ int	ft_strlen(char *str)
 // int	main(int argc, char **argv)
 // {
 // 	char	*str = argv[1];
-	
+
 // 	if (argc != 2)
 // 		return (0);
 // 	printf("%d", ft_strlen(str));
