@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strspn.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbruha <tbruha@student.42Prague.com>       +#+  +:+       +#+        */
+/*   By: tbruha <tbruha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 19:49:31 by tbruha            #+#    #+#             */
-/*   Updated: 2024/10/17 19:49:33 by tbruha           ###   ########.fr       */
+/*   Updated: 2024/11/26 18:11:07 by tbruha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
+// if match_found, mark a flag and at the end of the loop check for the flag.
 size_t	ft_strspn(const char *s, const char *accept)
 {
 	int	i;

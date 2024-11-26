@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbruha <tbruha@student.42Prague.com>       +#+  +:+       +#+        */
+/*   By: tbruha <tbruha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 19:02:10 by tbruha            #+#    #+#             */
-/*   Updated: 2024/10/17 19:02:11 by tbruha           ###   ########.fr       */
+/*   Updated: 2024/11/26 18:09:05 by tbruha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ char	*ft_strrev(char *str)
 	len = 0;
 	while (str[len])
 		len++;
+	printf("%d\n%d\n", len, i);
 	while (i < len / 2)
 	{
 		tmp = str[i];
@@ -33,14 +34,14 @@ char	*ft_strrev(char *str)
 	return (str);	
 }
 
-// int	main(void)
-// {
-// 	char	str[] = "hello";
+int	main(void)
+{
+	char	str[] = "aabbccdd";
 	
-// 	ft_strrev(str);
-// 	printf("%s", str);
-// 	return (0);
-// }
+	ft_strrev(str);
+	printf("%s", str);
+	return (0);
+}
 
 // Assignment name  : ft_strrev
 // Expected files   : ft_strrev.c

@@ -14,8 +14,8 @@ int	ft_strcmp(char *s1, char *s2)
 
 // int	main(void)
 // {
-// 	char	s1[] = "aaa";
-// 	char	s2[] = "aab";
+// 	char	s1[] = "aaba";
+// 	char	s2[] = "aaba";
 
 // 	printf("%d\n", ft_strcmp(s1, s2));
 // 	return (0);
